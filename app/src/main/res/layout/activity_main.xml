@@ -1,0 +1,45 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    tools:context="com.ohmatthew.indecisive.MainActivity"
+	    android:orientation="vertical"
+	    android:animateLayoutChanges="true" >
+	
+	    <ListView
+		    android:id="@+id/listview"
+		    android:layout_weight="1"
+		    android:layout_width="match_parent"
+		    android:layout_height="fill_parent"
+		    android:divider="@android:color/transparent"
+		    android:animateLayoutChanges="true"
+            android:dividerHeight="0dp" />
+		<TextView
+		    android:id="@+id/button_go"
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:text="Decide!"
+		    android:gravity="center"
+		    android:layout_gravity="bottom"
+		    android:textColor="#FFFFFF"
+		    android:textSize="15dp"
+		    android:textStyle="bold"
+		    android:background="#731F35"/>
+	
+	</LinearLayout>
+	
+	<ListView android:id="@+id/left_drawer"
+	        android:layout_width="240dp"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="start"
+	        android:choiceMode="singleChoice"
+	        android:divider="@android:color/transparent"
+	        android:dividerHeight="0dp"
+	        android:background="#111"/>
+</android.support.v4.widget.DrawerLayout>

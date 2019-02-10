@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:textColor="#FFF"
+        android:gravity="left|center_vertical"
+        android:layout_alignParentLeft="true"/>
+    <ImageView
+        android:id="@+id/action_remove"
+        android:src="@drawable/ic_remove_circle_outline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+    	style="?android:attr/borderlessButtonStyle" />
+	</RelativeLayout>

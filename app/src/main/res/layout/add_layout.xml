@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <EditText
+        android:id="@+id/text_add"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:hint="@string/add_hint"
+        android:imeOptions="actionSend"
+        android:background="@android:color/transparent"
+        android:singleLine="true"
+    />
+    
+    
+</RelativeLayout>
