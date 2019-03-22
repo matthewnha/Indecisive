@@ -4,13 +4,13 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <android:uses-permission
+    <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission
+        android:maxSdkVersion="26" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
+        android:maxSdkVersion="26" />
 
     <application
         android:allowBackup="true"
@@ -27,15 +27,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Roll"
-            android:label="@string/title_activity_roll" >
-        </activity>
-        <activity
-            android:name=".Spin"
+            android:name=".SpinActivity"
             android:label="@string/title_activity_spin" >
         </activity>
         <activity
-            android:name=".ChosenScreen"
+            android:name=".ChosenActivity"
             android:label="@string/title_activity_chosen_screen"
             android:theme="@style/ChosenScreenTheme">
         </activity>

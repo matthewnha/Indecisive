@@ -49,14 +49,16 @@ public class SpinAnimation extends Animation{
 
     @Override
     protected void applyTransformation(float interpolatedTime, Transformation t) {
-    	float degrees = degrees = mFromDegrees + ((mToDegrees - mFromDegrees) * interpolatedTime);;
+    	float degrees = mFromDegrees + ((mToDegrees - mFromDegrees) * interpolatedTime);
     	//Log.v("anim", interpolatedTime+":"+(interpolatedTime-1));
+
     	if(time < 1){
     		degrees = ((-1*(mToDegrees - mFromDegrees)) *  (float)Math.pow(interpolatedTime-1,2)) + (mToDegrees - mFromDegrees);
     	} else {
     		degrees = mToDegrees - mFromDegrees;
     	}
-    	time=interpolatedTime;
+
+    	time = interpolatedTime;
         float scale = getScaleFactor();
         
         if (mPivotX == 0.0f && mPivotY == 0.0f) {
