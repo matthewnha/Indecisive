@@ -1,4 +1,4 @@
-package com.ohmatthew.indecisive;
+package com.ohmatthew.indecisive.activities.Spin;
 
 import android.content.Context;
 import android.content.res.TypedArray;

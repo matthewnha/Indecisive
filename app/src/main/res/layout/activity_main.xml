@@ -9,38 +9,31 @@
 	    xmlns:tools="http://schemas.android.com/tools"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
-	    tools:context="com.ohmatthew.indecisive.MainActivity"
+	    tools:context="com.ohmatthew.indecisive.activities.Main.MainActivity"
 	    android:orientation="vertical"
 	    android:animateLayoutChanges="true" >
 	
-	    <ListView
-		    android:id="@+id/listview"
+	    <android.support.v7.widget.RecyclerView
+		    android:id="@+id/recycler_view"
+			android:scrollbars="vertical"
 		    android:layout_weight="1"
 		    android:layout_width="match_parent"
-		    android:layout_height="fill_parent"
-		    android:divider="@android:color/transparent"
-		    android:animateLayoutChanges="true"
-            android:dividerHeight="0dp" />
+		    android:layout_height="match_parent"
+			android:padding="15dp"
+			android:background="@color/listview_background" />
+
 		<TextView
 		    android:id="@+id/button_go"
 		    android:layout_width="match_parent"
-		    android:layout_height="50dp"
-		    android:text="Decide!"
+		    android:layout_height="55dp"
+		    android:text="@string/make_decision"
 		    android:gravity="center"
 		    android:layout_gravity="bottom"
 		    android:textColor="#FFFFFF"
 		    android:textSize="15dp"
 		    android:textStyle="bold"
-		    android:background="#731F35"/>
+			android:background="@color/colorAccent"
+		    />
 	
 	</LinearLayout>
-	
-	<ListView android:id="@+id/left_drawer"
-	        android:layout_width="240dp"
-	        android:layout_height="match_parent"
-	        android:layout_gravity="start"
-	        android:choiceMode="singleChoice"
-	        android:divider="@android:color/transparent"
-	        android:dividerHeight="0dp"
-	        android:background="#111"/>
 </LinearLayout>

@@ -10,5 +10,7 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
     <string name="title_activity_chosen_screen">Winner</string>
+    <string name="make_decision">Decide</string>
+    <string name="inital_spin_text">Get ready!</string>
 
 </resources>

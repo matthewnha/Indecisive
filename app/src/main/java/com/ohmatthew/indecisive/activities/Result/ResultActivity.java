@@ -1,4 +1,4 @@
-package com.ohmatthew.indecisive;
+package com.ohmatthew.indecisive.activities.Result;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,8 +10,10 @@ import android.view.MenuItem;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.ohmatthew.indecisive.R;
 
-public class ChosenActivity extends Activity {
+
+public class ResultActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,7 @@ public class ChosenActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_chosen_screen, menu);
+        getMenuInflater().inflate(R.menu.menu_chosen_activity, menu);
         return true;
     }
 

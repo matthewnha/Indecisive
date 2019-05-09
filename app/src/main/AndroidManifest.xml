@@ -18,7 +18,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.Main.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,11 +27,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SpinActivity"
+            android:name=".activities.Spin.SpinActivity"
             android:label="@string/title_activity_spin" >
         </activity>
         <activity
-            android:name=".ChosenActivity"
+            android:name=".activities.Result.ResultActivity"
             android:label="@string/title_activity_chosen_screen"
             android:theme="@style/ChosenScreenTheme">
         </activity>

@@ -2,7 +2,7 @@
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/list_item"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
         android:paddingLeft="20dp"
         android:paddingRight="0dp"
         android:paddingTop="0dp"
@@ -14,7 +14,7 @@
         android:id="@+id/item_name"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:textColor="#FFF"
+        android:textColor="@color/greyDark"
         android:gravity="left|center_vertical"
         android:layout_alignParentLeft="true"/>
     <ImageView

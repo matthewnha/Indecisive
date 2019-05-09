@@ -1,12 +1,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.ohmatthew.indecisive.MainActivity" >
+    tools:context="com.ohmatthew.indecisive.activities.Main.MainActivity" >
     
     <item 
         android:id="@+id/action_add"
         android:title="Add"
         android:icon="@drawable/ic_edit"
         android:showAsAction="ifRoom|collapseActionView"
-        android:actionLayout="@layout/add_layout"/>
+        android:actionLayout="@layout/action_bar_add_item"/>
     
 </menu>

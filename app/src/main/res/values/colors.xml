@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="listview_background">#F2F2F2</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#1D5298</color>
+    <color name="greyDark">#585858</color>
+    <color name="greyLight">#8D8D8D</color>
+    <drawable name="transparent_color">#00000000</drawable>
+</resources>

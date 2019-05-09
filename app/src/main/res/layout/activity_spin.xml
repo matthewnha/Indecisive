@@ -1,16 +1,49 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/SpinLayout"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SpinLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ohmatthew.indecisive.SpinActivity"
-    android:background="@drawable/slot_background" >
-    <RelativeLayout 
-        android:id="@+id/PieChart"
-        android:gravity="center"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-    	android:layout_height="wrap_content">
-    </RelativeLayout>
+    android:background="@drawable/activity_bg_spinning_wheel"
+    tools:context="com.ohmatthew.indecisive.activities.Spin.SpinActivity">
 
-</RelativeLayout>
+    <android.support.constraint.Guideline
+        android:id="@+id/top_wheel_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ohmatthew.indecisive.activities.Spin.SpinningWheelView
+        android:id="@+id/wheel_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top_wheel_guideline"
+        app:layout_constraintWidth_percent="0.875" />
+
+    <TextView
+        android:id="@+id/choice_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="110sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/inital_spin_text"
+        android:shadowColor="#191919"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.85" />
+
+</android.support.constraint.ConstraintLayout>
